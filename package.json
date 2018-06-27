@@ -1,6 +1,6 @@
 {
-  "name": "amqplib-mocks",
-  "version": "1.3.0",
+  "name": "@settlemint/amqplib-mocks",
+  "version": "0.0.0-development",
   "description": "Simple amqplib mocking library",
   "main": "lib/index.js",
   "scripts": {
@@ -22,7 +22,9 @@
     "version": "npm run build",
     "postversion": "git push && git push --tags",
     "prepublish": "publish-please guard",
-    "publish-please": "publish-please"
+    "publish-please": "publish-please",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once --pro"
   },
   "dependencies": {
     "lodash": "^4.17.2",
@@ -49,17 +51,19 @@
     "nyc": "^11.4.1",
     "publish-please": "^2.3.1",
     "sinon-as-promised": "^4.0.0",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "^5.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bunk/amqplib-mocks.git"
+    "url": "https://github.com/settlemint/amqplib-mocks.git"
   },
   "author": "LeanKit",
   "bugs": {
-    "url": "https://github.com/bunk/amqplib-mocks/issues"
+    "url": "https://github.com/settlemint/amqplib-mocks/issues"
   },
-  "homepage": "https://github.com/bunk/amqplib-mocks#readme",
+  "homepage": "https://github.com/settlemint/amqplib-mocks#readme",
   "nyc": {
     "include": [
       "src/**/*.js"
