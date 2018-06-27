@@ -4,20 +4,21 @@
 [![Build][ci-image]][ci-url]
 [![Coverage][coverage-image]][coverage-url]
 
-A simple mocking framework for amqplib.  Currently supports the following:
-* Multiple connections
-* Routing messages based on routingKey
-* Retrieving any published messages on a channel
-* Asserting topology
-* The server remotely closing a channel
+A simple mocking framework for amqplib. Currently supports the following:
+
+- Multiple connections
+- Routing messages based on routingKey
+- Retrieving any published messages on a channel
+- Asserting topology
+- The server remotely closing a channel
 
 ## Usage
 
 ```javascript
-const amqplib = require( "amqplib-mocks" );
-const proxyquire = require( "proxyquire" );
+const amqplib = require('amqplib-mocks');
+const proxyquire = require('proxyquire');
 
-const server = proxyquire( "./app", { amqplib } );
+const server = proxyquire('./app', { amqplib });
 server.listen();
 ```
 
