@@ -20,9 +20,6 @@
 		"pretest": "npm run lint",
 		"preversion": "npm run cover",
 		"version": "npm run build",
-		"postversion": "git push && git push --tags",
-		"prepublish": "publish-please guard",
-		"publish-please": "publish-please",
 		"semantic-release": "semantic-release",
 		"travis-deploy-once": "travis-deploy-once --pro"
 	},
