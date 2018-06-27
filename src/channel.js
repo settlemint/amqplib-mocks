@@ -56,6 +56,7 @@ class Channel {
 		this.once = sinon.stub();
 		this.checkExchange = sinon.stub();
 
+
 		this.trackedMessages = [];
 
 		this.assertQueue = sinon.stub().callsFake( async ( queue, opt ) => {
