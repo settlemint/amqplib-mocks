@@ -54,6 +54,7 @@ class Channel {
 		this.prefetch = sinon.stub();
 		this.on = sinon.stub();
 		this.once = sinon.stub();
+		this.checkExchange = sinon.stub();
 
 		this.trackedMessages = [];
 
