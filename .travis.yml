@@ -27,4 +27,4 @@ deploy:
     - npm run semantic-release
   on:
     branch: master
-    repo: settlemint/lib-mint
+    repo: settlemint/amqplib-mocks
